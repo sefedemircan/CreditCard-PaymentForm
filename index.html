@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demircan Kredi Kartı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="odeme-ekrani">
+        <h1>Ödeme Ekranı <hr></h1>
+        <h1a>Ad-Soyad</h1a>
+        <p>*Kart sahibinin adı ve soyadı</p>
+        <h1b>Kredi Kartı Numarası</h1b>
+        <h1c>SKT - Ay</h1c>
+        <h1d>SKT - Yıl</h1d>
+        <h1e>CVV</h1e>
+        <p2>*Kredi kartının 16 haneli numarasını giriniz</p2>
+        <p3>*Kredi kartının son kullanma tarihi - Ay</p3>
+        <p4>*Kredi kartının son kullanma tarihi - Yıl</p4>
+        <p5>*Kredi kartının arkasında bulunan 3 haneli güvenlik kodu</p5>
+        <input type="text1" id="name" name="Ad-Soyad" placeholder="Ad-Soyad">
+        <input type="text2" id="card-number" placeholder="Kredi Kartı Numarası">
+        <input type="text3" id="sktarih-ay" placeholder="SKT - Ay">
+        <input type="text4" id="sktarih-yil" placeholder="SKT - Yıl">
+        <input type="text5" id="cvv" placeholder="CVV">
+        <button type="submit">
+            Kredi Kartıyla Öde
+        </button>
+    </div>
+    <div class="credit-card-wrap">
+        <div class="mk-icon-world-map"></div>
+            <div class="credit-card-inner">
+                <header class="header">
+                    <div class="credit-logo">
+                        <div class="shape"><span class="txt">SED</span></div> <span class="text">SED BANK</span>
+                    </div>
+                </header>
+                <div class="mk-icon-sim"></div>
+                <div class="credit-font credit-card-number"></div>
+                <footer class="footer">
+                    <div class="clearfix">
+                        <div class="pull-left">
+                            <div class="credit-card-date"><span class="title">SKT<br>AY / YIL</span><span class="credit-font">  <span class="skt-ay"></span> / <span class="skt-yil"></span> </span></div>
+                            <div class="credit-font credit-author"></div>
+                        </div>
+                        <div class="pull-right"><i class="carttype fab" style="font-size: 45px; color:white;"></i>  </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d090ffa96b.js" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#name").keyup(function(){
+                var name = $("#name").val();
+                $(".credit-author").text(name)
+            });
+            $("#sktarih-ay").keyup(function(){
+                var sktay = $("#sktarih-ay").val();
+                $(".skt-ay").text(sktay)
+            });
+            $("#sktarih-yil").keyup(function(){
+                var sktyil = $("#sktarih-yil").val();
+                $(".skt-yil").text(sktyil)
+            });
+            $("#card-number").keyup(function(){
+                var cartnumber = $("#card-number").val();
+                var cartnumber1 = cartnumber.slice(0,4) + " ";
+                var cartnumber2 = cartnumber.slice(4,8) + " ";
+                var cartnumber3 = cartnumber.slice(8, 12) + " ";
+                var cartnumber4 = cartnumber.slice(12,16);
+                var cart = cartnumber1+cartnumber2+cartnumber3+cartnumber4;
+                $(".credit-card-number").text(cart)
+            });
+            $("#card-number").keyup(function(){
+                var cartnumber = $("#card-number").val();
+                var cartnumber1 = cartnumber.slice(0,1);
+                if(cartnumber1=='5'){
+                    $(".carttype").addClass("fa-cc-mastercard");
+                }
+                if(cartnumber1=='4'){
+                    $(".carttype").addClass("fa-cc-visa");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
