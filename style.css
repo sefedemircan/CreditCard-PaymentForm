@@ -1,0 +1,357 @@
+.odeme-ekrani{
+    width: 1235px;
+    height: 50vh;
+    background:-webkit-linear-gradient(to left, #d1d1d1 , #a7a7a7);
+	background:linear-gradient(to left, #d1d1d1 , #a7a7a7);
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    border-radius: 10px;
+
+}
+
+
+body{
+    background-color: rgb(204, 204, 204);
+   
+}
+
+
+.odeme-ekrani input[type=text1]{
+    width: 570px;
+    height: 35px;
+    position: absolute;
+    top: 100px;
+    left: 1.8vw;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
+}
+
+
+.odeme-ekrani input[type=text1]:focus{
+    border-color: dodgerblue;
+    box-decoration-break: 0 0 8px 0 dodgerBlue;
+}
+
+
+.odeme-ekrani input[type=text2]{
+    position: absolute;
+    top: 100px;
+    left: 41vw;
+    width: 570px;
+    height: 35px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s
+}
+
+
+.odeme-ekrani input[type=text2]:focus{
+    border-color: dodgerblue;
+    box-decoration-break: 0 0 8px 0 dodgerBlue;
+}
+
+
+.odeme-ekrani input[type=text3]{
+    position: absolute;
+    top: 200px;
+    left: 1.8vw;
+    height: 35px;
+    width: 365px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s
+}
+
+
+.odeme-ekrani input[type=text3]:focus{
+    border-color: dodgerblue;
+    box-decoration-break: 0 0 8px 0 dodgerBlue;
+}
+
+.odeme-ekrani input[type=text4]{
+    position: absolute;
+    top: 200px;
+    left: 28.2vw;
+    height: 35px;
+    width: 365px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s
+}
+.odeme-ekrani input[type=text4]:focus{
+    border-color: dodgerblue;
+    box-decoration-break: 0 0 8px 0 dodgerBlue;
+}
+
+.odeme-ekrani input[type=text5]{
+    position: absolute;
+    top: 200px;
+    left: 54.4vw;
+    height: 35px;
+    width: 365px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s
+}
+
+.odeme-ekrani input[type=text5]:focus{
+    border-color: dodgerblue;
+    box-decoration-break: 0 0 8px 0 dodgerBlue;
+}
+.odeme-ekrani h1{
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #444444;
+}
+
+
+.odeme-ekrani hr{
+    position: relative;
+    left: 9px;
+    bottom: 20px;
+    width: 78.4vw;
+    color: black;
+}
+
+
+.credit-card-wrap{
+	top:70%;
+	left:50%;
+	width:450px;
+	height:285px;
+	position:fixed;
+	border-radius:20px;
+	background:#5D4157;
+	margin-left:-225px;
+	margin-top:-142.5px;
+	background:-webkit-linear-gradient(to left, #980000 , #393939);
+	background:linear-gradient(to left, #980000 , #393939);
+	box-shadow:2px 2px rgba(0,0,0,.4);
+}
+.odeme-ekrani button[type=submit]{
+    width: 140px;
+    height: 45px;
+    background-color: dodgerblue;
+    color: white;
+    outline: none;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    position: absolute;
+    top: 290px;
+    left: 29px;
+}
+
+
+
+
+h1a{
+position: absolute;
+top: 80px;
+left: 29px;
+font-family: sans-serif;
+}
+
+p{
+    position: absolute;
+    top: 125px;
+    left: 29px;
+    color: #444444;
+    font-family: sans-serif;
+}
+
+h1b{
+    position: absolute;
+    top: 80px;
+    right: 455px;
+    font-family: sans-serif;
+}
+p2{
+    position: absolute;
+    top: 142px;
+    right: 303px;
+    color: #444444;
+    font-family: sans-serif;
+}
+
+p3{
+    position: absolute;
+    top: 240px;
+    left: 29px;
+    color: #444444;
+    font-family: sans-serif;
+}
+
+p4{
+    position: absolute;
+    top: 240px;
+    left: 433px;
+    color: #444444;
+    font-family: sans-serif;
+}
+p5{
+    position: absolute;
+    top: 240px;
+    right: 0px;
+    color: #444444;
+    font-family: sans-serif;
+}
+h1c{
+    position: absolute;
+    top: 177px;
+    left: 29px;
+    font-family: sans-serif;
+}
+h1d{
+    position: absolute;
+    top: 177px;
+    left: 433px;
+    font-family: sans-serif;
+}
+h1e{
+    position: absolute;
+    top: 177px;
+    right: 365px;
+}
+
+.credit-card-wrap h2{
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+.credit-card-wrap .mk-icon-world-map{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	border-radius:inherit;
+}
+.credit-card-wrap .mk-icon-world-map:before{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+	background:rgba(0,0,0,.4);
+	background:radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, rgba(0,0,0,.2) 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+		radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, rgba(255,255,255,.2) 10px, rgba(96, 16, 48, 0) 11px), rgba(0,0,0,.6);
+	background-size: 20px 20px;
+}
+.credit-card-wrap .credit-card-inner{
+	z-index:100;
+	padding:30px;
+	width:inherit;
+	height:inherit;
+	position:relative;
+}
+.credit-card-wrap .credit-logo .text{
+	font-size:24px;
+	font-weight:500;
+	margin-left:10px;
+	text-transform:uppercase;
+	color:rgba(255,255,255,.8);
+}
+.credit-card-wrap .credit-logo .shape{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	background-color:#dc143c;
+	box-shadow:-2px 2px 0 rgba(255,255,255,.8);
+	border-radius:40px 4 40px 40px;
+	transform:rotate(-45deg);
+}
+.credit-card-wrap .credit-logo .shape>.txt{
+	color:#ccc;
+	display:block;
+	width:inherit;
+	font-size:14px;
+	height:inherit;
+	font-weight:500;
+	line-height:40px;
+	text-align:center;
+	transform:rotate(45deg);
+}
+.credit-card-wrap .credit-font{
+	color:#fff;
+	font-size:18px;
+	font-family:ocr_a_std,sans-serif;
+	text-shadow:-1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+}
+.credit-card-wrap .credit-card-number{
+	font-size:26px;
+	text-align:center;
+	position:relative;
+    right: 82px;
+	letter-spacing:2px;
+	margin-bottom:20px;
+	white-space:nowrap;
+}
+.credit-card-wrap .credit-card-number:before{
+	top:100%;
+	font-size:12px;
+	font-family:Roboto;
+	content:attr(data-text);
+}
+.credit-card-wrap .credit-card-date{
+	color:#fff;
+	text-align:center;
+}
+.credit-card-wrap .credit-card-date .title{
+	width:50px;
+	color:#deb887;
+	font-size:12px;
+	line-height:14px;
+	text-align:right;
+	display:inline-block;
+	text-transform:uppercase;
+    position: relative;
+    bottom: 10px;
+}
+.credit-card-wrap .credit-card-date .credit-font{
+	bottom: 15px;
+	left: 10px;
+	position:relative;
+}
+.credit-card-wrap .credit-author{
+    position: absolute;
+    bottom: 82px;
+    text-transform: uppercase;
+
+}
+.credit-card-wrap .mk-icon-sim{
+	width:55px;
+	height:40px;
+	margin:20px 0;
+	border-radius:8px;
+	background-color:#fdd76f;
+}
+.credit-card-wrap .mk-icon-visa{
+	width:90px;
+	height:45px;
+	bottom:-10px;
+	position:relative;
+}
+.credit-card-wrap .footer{
+	left:30px;
+	right:30px;
+	bottom:30px;
+	position:absolute;
+}
+.credit-card-wrap .footer .pull-left{
+	width:70%;
+}
